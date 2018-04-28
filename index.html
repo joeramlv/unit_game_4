@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<!--The name of the game-->
+    <div id="name">
+        <h1>CrystalsCollector</h1>
+    </div>
+<!--Here i set a div for the rules of the game-->
+    <div id="rules">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+      
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+<!--the random number the user has to get to-->
+    <div>
+
+        <h3>The Random Number is:<span id="randomNumber"></span></h3>
+        
+    </div>
+<!--This Div is the wins and losses scoreboard-->
+    <div class="wl">
+        <p>Wins:<span id="wins">0</span></p>
+        <p>Losses:<span id="losses">0</span></p>
+    </div>
+<!-- This Div contains all of the-->
+    <div class="crystals">
+        <button type="button" class="c1 c"><img src="https://images.emojiterra.com/emojione/v3/128px/1f48e.png"></button>
+        <button type="button" class="c2 c"><img src="https://image.flaticon.com/icons/png/128/539/539043.png"></button>
+        <button type="button" class="c3 c"><img src="https://coincheckup.com/images/coins/bitcoin-gold.png"></button>
+        <button type="button" class="c4 c"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjEf_tbHVdXSXIRQ2r9f4GXv1nIK_AQ0KL2cQhrxUzByzZdP_JfQ"></button>
+    </div>
+    
+    <div class="yourscore">
+        <p>Your total score is:<span id="userScore">0</span></p>
+    </div>
+    
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
